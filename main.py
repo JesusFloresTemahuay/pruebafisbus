@@ -1,22 +1,24 @@
 print("Programa FizBuz hasta el 1,000")
 
-fiz = "FiZZ"
-buz = "Buzz"
-salida = ""
-for counter in range(1, 1000):
-    
-    is_div3 = counter % 3 == 0
-    is_div5 = counter % 5 == 0
+FIZZ = "FiZZ"
+BUZZ = "Buzz"
+out = ""
 
-    if(is_div3):
-        salida = salida + fiz
-    if(is_div5):
-        salida = salida + buz
+for counter in range(1, 1000):
+
+    is_divisible_3 = counter % 3 == 0
+    is_divisible_5 = counter % 5 == 0
+
+    if(is_divisible_3):
+        out = out + FIZZ
+
+    if(is_divisible_5):
+        out = out + BUZZ
     
-    if(len(salida) > 0):
-        print(salida)
+    if(len(out) > 0):
+        print(out)
     else:
         print(counter)
 
-    salida = ""
+    out = ""
         
